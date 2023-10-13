@@ -10,7 +10,7 @@ internal class Practice
 {
     static void Main(string[] args)
     {
-        int[] inputArray = Console.ReadLine().Split(' ').Select(i=>int.Parse(i)).ToArray();
+        var inputArray = Console.ReadLine().Split(' ').Select(i=>int.Parse(i)).ToArray();
         int[] allArray = { 0, 1, 2 };
         int x = inputArray[0];
         int y = inputArray[1];

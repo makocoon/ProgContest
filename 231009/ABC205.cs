@@ -7,7 +7,7 @@ internal class Practice
 {
     static void Main(string[] args)
     {
-        double[] inputArray = Console.ReadLine().Split(' ').Select(i => double.Parse(i)).ToArray();
+        var inputArray = Console.ReadLine().Split(' ').Select(i => double.Parse(i)).ToArray();
         double Akcal = inputArray[0];
         double BmL = inputArray[1];
         Console.WriteLine(Akcal * BmL / 100);
