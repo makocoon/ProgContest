@@ -1,4 +1,4 @@
-﻿//問題 A.ChinChirorin
+﻿//問題
 //高橋君が 
 //3 つのサイコロを振ったところ、出た目はそれぞれ a, b, c でした。
 
@@ -18,7 +18,6 @@ using System.Dynamic;
 
 internal class Practice
 {
-    private const int DICE_SUM_SEVEN = 7;
     private const int NUMBER_OF_ROLLS = 3;
     static void Main(string[] args)
     {
@@ -28,7 +27,8 @@ internal class Practice
         Console.WriteLine(sum);
     }
     private static int CalcValue(int[] inputArray)
-    {
+    {   
+        int DICE_SUM_SEVEN = 7;
         int sum = 0;
         for (int i = 0; i < NUMBER_OF_ROLLS; i++)
         {
