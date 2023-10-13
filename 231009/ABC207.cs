@@ -9,7 +9,7 @@ internal class Practice
 {
     static void Main(string[] args)
     {
-        int[] inputArray = Console.ReadLine().Split(' ').Select(i => int.Parse(i)).ToArray();
+        var inputArray = Console.ReadLine().Split(' ').Select(i => int.Parse(i)).ToArray();
         Array.Sort(inputArray);
 
         int maxSum = inputArray[1] + inputArray[2];
