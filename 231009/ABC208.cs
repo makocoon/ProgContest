@@ -16,9 +16,9 @@ internal class Practice
     private static int MAXDICE = 6;
     static void Main(string[]  args)
     {
-        int[] inputArray = Console.ReadLine().Split(' ').Select(i => int.Parse(i)).ToArray();
-        int numbersOfRolls = inputArray[0];
-        int sumDice = inputArray[1];
+        var inputArray = Console.ReadLine().Split(' ').Select(i => int.Parse(i)).ToArray();
+        var numbersOfRolls = inputArray[0];
+        var sumDice = inputArray[1];
         if(sumDice >= numbersOfRolls * MINDICE && sumDice <= numbersOfRolls * MAXDICE)
         {
             Console.WriteLine("Yes");

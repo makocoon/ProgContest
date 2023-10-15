@@ -19,9 +19,9 @@ internal class Practice
 {
     static void Main(string[] args)
     {
-        int[] inputArray = Console.ReadLine().Split(' ').Select(i => int.Parse(i)).ToArray();
-        int minNumberA = inputArray[0];
-        int maxNumberB = inputArray[1];
+        var inputArray = Console.ReadLine().Split(' ').Select(i => int.Parse(i)).ToArray();//型推論使いましょう。
+        var minNumberA = inputArray[0];
+        var maxNumberB = inputArray[1];
         if(minNumberA <= maxNumberB)
         {
         Console.WriteLine(maxNumberB - minNumberA + 1);

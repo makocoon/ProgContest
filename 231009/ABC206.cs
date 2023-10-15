@@ -12,11 +12,11 @@ internal class Practice
     private const int LIST_PRICE = 206;
     static void Main(string[] args)
     {
-        int priceN = int.Parse(Console.ReadLine());
-        int taxIncludedPrice = (int)(priceN * 1.08);
+        var priceN = int.Parse(Console.ReadLine());
+        var taxIncludedPrice = (int)(priceN * 1.08);
         string display = JudgePrice(taxIncludedPrice);
         Console.WriteLine(display);
-            }
+    }
     private static string JudgePrice(int price)
     {
         if (price == LIST_PRICE) return "so-so";
